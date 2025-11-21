@@ -1,0 +1,355 @@
+/* Import font form goggle fonts */
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
+:root {
+  --text1: #fff;
+  --text2: #c4c4c4;
+  --nav-link: #faf5f5;
+  --theme1: #564ccf;
+  --theme-cta: #6254ff;
+  --cta: #252731;
+  --ctah: #2f323e;
+  --bg: #1e2028;
+  --sapn: #6254ff;
+}
+.light-theme {
+  --text1: #252731;
+  --text2: #2f323e;
+  --nav-link: #780000;
+  --theme1: #251d3a;
+  --theme-cta: #353059;
+  --cta: #d67302;
+  --ctah: #ffa200;
+  --bg: #fff;
+  --sapn: #ffa200;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--bg);
+  font-family: "Tajawal", sans-serif;
+}
+
+main {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+}
+
+/* logo in nav bar */
+nav .logo {
+  font-size: 3rem;
+  color: var(--theme1);
+}
+
+.ping {
+  width: 2rem;
+}
+
+nav #icon {
+  cursor: pointer;
+}
+
+nav .nav-itmes {
+  list-style-type: none;
+  /* in line  */
+  display: flex;
+}
+
+nav .nav-itmes .nav-item {
+  /* make a sapce */
+  padding-left: 2rem;
+}
+
+.nav-item .nav-link {
+  text-decoration: none;
+  color: var(--text2);
+}
+
+/* change text color when mouseover */
+.nav-item .nav-link:hover {
+  color: var(--nav-link);
+}
+
+.cta {
+  /* becuase input always its defualt font is normal  */
+  font-family: inherit;
+  padding: 0.75rem 2rem;
+  border: none;
+  color: var(--text1);
+  /*cntroling in input's edges */
+  border-radius: 1rem;
+  /*change cursor to clik hand shape */
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.cta.dark {
+  background-color: var(--cta);
+  transition: background-color 0.5s;
+}
+
+.cta.dark:hover {
+  background-color: var(--ctah);
+}
+
+.cta.purple {
+  background-color: var(--theme1);
+  color: #fff;
+  transition: background-color 0.5s;
+  margin-right: 1rem;
+}
+
+.cta.purple:hover {
+  background-color: var(--theme-cta);
+}
+
+/* Main Section */
+
+.hero {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  /* center in the line */
+  justify-content: center;
+  /* center in container */
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  width: 40%;
+  text-align: center;
+  color: var(--text1);
+  margin-bottom: 2rem;
+}
+
+.hero h1 span {
+  color: var(--sapn);
+}
+
+/* features */
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features h3 {
+  color: var(--text1);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.features h6 {
+  color: var(--text2);
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+.feature {
+  background-color: var(--cta);
+  display: flex;
+  border-radius: 3rem;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  box-shadow: 10px 10px 10px rgba(00, 00, 00, 0.5);
+}
+
+.feature .content {
+  padding: 4rem;
+  flex: 1;
+}
+
+.feature .content i {
+  color: var(--theme1);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.feature .content h2 {
+  color: var(--text1);
+  margin-bottom: 2rem;
+}
+
+.feature .content p {
+  color: var(--text2);
+  font-size: 1.2rem;
+  width: 80%;
+}
+
+.feature img {
+  flex: 1;
+  max-width: 50%;
+}
+
+/* Details */
+
+.detalis {
+  margin-top: 0 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detalis h2 {
+  color: var(--text1);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.detalis h6 {
+  color: var(--text2);
+  font-size: 1rem;
+}
+
+.detalis-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.detail {
+  background: var(--cta);
+  padding: 3rem;
+  border-radius: 2rem;
+  box-shadow: 10px 10px 10px rgba(00, 00, 00, 0.5);
+}
+
+.detail i {
+  color: var(--theme1);
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.detail h3 {
+  font-size: 2rem;
+  color: var(--text1);
+  margin-bottom: 1rem;
+}
+
+.detail h3:hover {
+  color: #6254ff;
+}
+
+.detail p {
+  color: var(--text2);
+}
+
+footer {
+  margin-top: 5rem;
+  background-color: var(--cta);
+  min-height: 25vh;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer h3 {
+  color: var(--text1);
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--text2);
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+footer p {
+  color: var(--text1);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+footer i {
+  color: var(--text2);
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  transition: 0.5;
+}
+
+footer i:hover {
+  color: var(--theme1);
+}
+
+@media screen and (max-width: 1450px) {
+  main {
+    max-width: 1042px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  main {
+    max-width: 750px;
+  }
+  .features-list img {
+    display: none;
+  }
+  .detalis-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    max-width: 600px;
+  }
+  .detalis-list {
+    grid-template-columns: 1fr;
+  }
+  html {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    margin: 2rem;
+    text-align: center;
+  }
+
+  .feature.content p {
+    width: 100%;
+  }
+  .content p {
+    width: 100%;
+    padding-left: 5.5rem;
+  }
+
+  .hero {
+    width: 90%;
+    font-size: 60%;
+  }
+  nav #mobile {
+    display: block;
+  }
+  nav .nav-itmes {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--theme1);
+    width: 100%;
+    height: 50%;
+    top: 12vh;
+    left: 0;
+    justify-content: center;
+  }
+  nav .nav-itmes .nav-item {
+    padding-left: 1rem 0;
+    font-size: 1.5rem;
+  }
+}
